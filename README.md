@@ -1,4 +1,4 @@
-# MC-Server-Player-Counts
+# Hypixel-Player-Counts
 
 Data from https://minetrack.me/
 
