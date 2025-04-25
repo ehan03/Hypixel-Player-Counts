@@ -2,8 +2,6 @@
 
 Data from https://minetrack.me/
 
-Probably going to downsample to hourly peaks
-
 ## Licensing
 
 According to the [Minetrack Data](https://data.minetrack.me/) website:
