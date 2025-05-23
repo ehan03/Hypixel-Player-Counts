@@ -30,8 +30,6 @@ class HypixelDataIngestor:
 
         self.ingestion_type = ingestion_type
 
-        self.legacy_db_url = "https://dl.minetrack.me/minetrack_java_db_2.sql.zip"
-
         self.base_url = "https://dl.minetrack.me/Java"
         self.export_start_date = datetime(year=2020, month=8, day=1).date()
         self.today_datetime = datetime.now(timezone.utc)
@@ -87,7 +85,7 @@ class HypixelDataIngestor:
 
     def get_all_historical_data(self) -> pd.DataFrame:
         legacy_df = pd.read_csv(
-            os.path.join(self.path_to_data, "legacy_data.csv"),
+            os.path.join(self.path_to_data, "old", "legacy_data.csv"),
             parse_dates=["Timestamp"],
         )
         historical_dfs = [legacy_df]
